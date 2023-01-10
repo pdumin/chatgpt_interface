@@ -7,7 +7,7 @@ from streamlit_chat import message
 
 
 # for streamlit run
-openai.api_key = st.secret['key']
+openai.api_key = st.secrets['key']
 
 def generate_response(prompt):
     completion=openai.Completion.create(
