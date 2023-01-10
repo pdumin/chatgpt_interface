@@ -1,0 +1,1 @@
+Simple chatgpt interface via streamit platform. Put `key.py` with openai API-key. 
