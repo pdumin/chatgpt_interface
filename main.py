@@ -1,11 +1,13 @@
 import openai
 import streamlit as st
 from streamlit_chat import message
-from key import key
+
+# for local run 
+# from key import key
 
 
-
-openai.api_key = key
+# for streamlit run
+openai.api_key = st.secret['key']
 
 def generate_response(prompt):
     completion=openai.Completion.create(
